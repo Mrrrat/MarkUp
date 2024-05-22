@@ -36,7 +36,7 @@ if __name__ == "__main__":
         return category
     
     # Load your data
-    data = pd.read_csv('data.csv').iloc[:5000]
+    data = pd.read_excel('data.xlsx').iloc[1:5001]
     text_requests = data['text'].values
     categories = ["Request with geo intent", "Request with no geo intent"]
     
